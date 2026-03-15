@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article Title - PC Wiki</title>
+    <title>Guides - PC Wiki</title>
     <link rel="stylesheet" href="/src/style.css" />
 </head>
 
@@ -24,7 +24,7 @@
                     <a href="/PC-wiki/" class="btn btn-ghost text-xl">PC Wiki</a>
                 </div>
                 <div class="flex-none">
-                    <a href="/" class="btn btn-ghost btn-circle" title="Home">
+                    <a href="/" class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 stroke-current">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
@@ -32,53 +32,37 @@
                 </div>
             </div>
 
-            <div class="container mx-auto px-4 py-8 max-w-4xl">
-                <div class="text-sm breadcrumbs mb-6">
-                    <ul>
-                        <li><a href="/PC-wiki/" class="opacity-70">Home</a></li>
-                        <li><a href="/PC-wiki/category/" class="opacity-70">Category Name</a></li>
-                        <li>Article Title</li>
-                    </ul>
+            <div class="container mx-auto px-4 py-8">
+                <h1 class="text-4xl font-bold mb-8">Guides</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/PC-wiki/guides/windows-install.html" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h2 class="card-title">Windows Installation</h2>
+                            <p class="opacity-70 text-sm">How to clean install Windows 11</p>
+                        </div>
+                    </a>
+                    <a href="/PC-wiki/guides/bios-setup.html" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h2 class="card-title">BIOS Setup</h2>
+                            <p class="opacity-70 text-sm">Navigate and configure your BIOS</p>
+                        </div>
+                    </a>
+                    <a href="/PC-wiki/guides/overclocking.html" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h2 class="card-title">Overclocking Basics</h2>
+                            <p class="opacity-70 text-sm">Safely increase your hardware performance</p>
+                        </div>
+                    </a>
+                    <a href="/PC-wiki/guides/dual-boot.html" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h2 class="card-title">Dual Boot Guide</h2>
+                            <p class="opacity-70 text-sm">Run Windows and Linux together</p>
+                        </div>
+                    </a>
                 </div>
 
-                <article>
-                    <h1 class="text-4xl font-bold mb-4">Article Title</h1>
-
-                    <div class="alert mb-8 bg-base-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <div>
-                            <p class="font-semibold">Summary</p>
-                            <p class="text-sm opacity-70">Write a brief summary here.</p>
-                        </div>
-                    </div>
-
-                    <div class="prose prose-invert max-w-none mb-12">
-                        <h2>Section 1</h2>
-                        <p>Write your content here...</p>
-
-                        <h2>Section 2</h2>
-                        <p>Write your content here...</p>
-                    </div>
-
-                    <div class="card bg-base-200 mb-8">
-                        <div class="card-body">
-                            <h2 class="card-title text-xl">See Also</h2>
-                            <ul class="list-disc list-inside space-y-2 opacity-80">
-                                <li><a href="#" class="text-primary hover:underline">Related Article #1</a></li>
-                                <li><a href="#" class="text-primary hover:underline">Related Article #2</a></li>
-                                <li><a href="/PC-wiki/" class="text-primary hover:underline">Back to PC Wiki Home</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="text-sm opacity-50 mb-8">
-                        <p>Last updated: March 2026</p>
-                    </div>
-                </article>
-
-                <footer class="footer footer-center p-6 bg-base-200 text-base-content rounded-box">
+                <footer class="footer footer-center p-6 bg-base-200 text-base-content rounded-box mt-12">
                     <div>
                         <p class="opacity-60">PC Wiki by Marzweb • Open source on GitHub</p>
                     </div>
@@ -89,7 +73,6 @@
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul class="menu bg-base-200 min-h-full w-80 p-4">
                 <li><a href="/PC-wiki/">Home</a></li>
-                
                 <li>
                     <details>
                         <summary>Hardware</summary>
@@ -104,7 +87,6 @@
                         </ul>
                     </details>
                 </li>
-
                 <li>
                     <details>
                         <summary>Software</summary>
@@ -116,9 +98,8 @@
                         </ul>
                     </details>
                 </li>
-
                 <li>
-                    <details>
+                    <details open>
                         <summary>Guides</summary>
                         <ul>
                             <li><a href="/PC-wiki/guides/">All Guides</a></li>
@@ -129,7 +110,6 @@
                         </ul>
                     </details>
                 </li>
-
                 <li>
                     <details>
                         <summary>Troubleshooting</summary>
@@ -141,7 +121,6 @@
                         </ul>
                     </details>
                 </li>
-
                 <li class="divider"></li>
                 <li><a href="https://github.com/MarzSaksorn/PC-wiki" target="_blank">GitHub</a></li>
                 <li><a href="/">Back to Marzweb</a></li>
