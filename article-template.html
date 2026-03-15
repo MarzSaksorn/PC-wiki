@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Title - PC Wiki</title>
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="min-h-screen bg-base-100">
+    <div class="drawer lg:drawer-open">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+            <div class="navbar bg-base-300">
+                <div class="flex-none">
+                    <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block h-6 w-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div class="flex-1">
+                    <a href="/PC-wiki/" class="btn btn-ghost text-xl">PC Wiki</a>
+                </div>
+                <div class="flex-none">
+                    <a href="/" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-8 max-w-4xl">
+                <!-- Breadcrumb -->
+                <div class="text-sm breadcrumbs mb-6">
+                    <ul>
+                        <li><a href="/PC-wiki/" class="opacity-70">Home</a></li>
+                        <li><a href="#" class="opacity-70">Category Name</a></li>
+                        <li>Article Title</li>
+                    </ul>
+                </div>
+
+                <!-- Article Title -->
+                <h1 class="text-4xl font-bold mb-4">Article Title</h1>
+
+                <!-- Summary -->
+                <div class="alert mb-8 bg-base-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Summary</p>
+                        <p class="text-sm opacity-70">Brief overview of what this article covers. Keep it concise - 1-3 sentences.</p>
+                    </div>
+                </div>
+
+                <!-- Prerequisites -->
+                <div class="card bg-base-200 mb-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-xl">Prerequisites</h2>
+                        <ul class="list-disc list-inside space-y-1 opacity-80">
+                            <li>Required item or knowledge #1</li>
+                            <li>Required item or knowledge #2</li>
+                            <li>Optional but recommended #3</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <article class="prose prose-invert max-w-none mb-12">
+                    <h2>Step 1: First Step</h2>
+                    <p>Explain the first step in detail. Break down complex tasks into smaller, digestible sections.</p>
+                    <p>Use paragraphs to separate different ideas and concepts.</p>
+
+                    <h2>Step 2: Second Step</h2>
+                    <p>Continue with the next step. Include code blocks when showing technical content:</p>
+
+                    <!-- Code Block Example -->
+                    <div class="mockup-code bg-base-300 text-sm">
+                        <pre><code># Example command or code
+sudo apt-get update
+sudo apt-get upgrade</code></pre>
+                    </div>
+
+                    <p>Explain what the code does after showing it.</p>
+
+                    <h2>Step 3: Third Step</h2>
+                    <p>Continue as needed. You can use:</p>
+                    <ul>
+                        <li>Bullet points for lists</li>
+                        <li>Numbered lists for sequential steps</li>
+                        <li>Tables for comparative data</li>
+                    </ul>
+
+                    <!-- Table Example -->
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra">
+                            <thead>
+                                <tr>
+                                    <th>Option</th>
+                                    <th>Description</th>
+                                    <th>Use Case</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>Description A</td>
+                                    <td>Use case A</td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>Description B</td>
+                                    <td>Use case B</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Tips -->
+                <div class="alert alert-success mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Tip</p>
+                        <p class="text-sm">Helpful tip or additional information that makes the task easier.</p>
+                    </div>
+                </div>
+
+                <!-- Warning -->
+                <div class="alert alert-warning mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Warning</p>
+                        <p class="text-sm">Important caution or thing to watch out for.</p>
+                    </div>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="card bg-base-200 mb-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-xl">Troubleshooting</h2>
+                        <div class="collapse collapse-arrow bg-base-300">
+                            <input type="radio" name="troubleshoot-1" checked />
+                            <div class="collapse-title font-medium">Issue: Common problem #1</div>
+                            <div class="collapse-content">
+                                <p>Solution or workaround for this issue.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-300">
+                            <input type="radio" name="troubleshoot-1" />
+                            <div class="collapse-title font-medium">Issue: Common problem #2</div>
+                            <div class="collapse-content">
+                                <p>Solution or workaround for this issue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- See Also -->
+                <div class="card bg-base-200 mb-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-xl">See Also</h2>
+                        <ul class="list-disc list-inside space-y-2 opacity-80">
+                            <li><a href="#" class="text-primary hover:underline">Related Article #1</a></li>
+                            <li><a href="#" class="text-primary hover:underline">Related Article #2</a></li>
+                            <li><a href="/PC-wiki/" class="text-primary hover:underline">Back to PC Wiki Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Last Updated -->
+                <div class="text-sm opacity-50 mb-8">
+                    <p>Last updated: March 2026</p>
+                </div>
+
+                <footer class="footer footer-center p-6 bg-base-200 text-base-content rounded-box">
+                    <div>
+                        <p class="opacity-60">PC Wiki by Marzweb • Open source on GitHub</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="menu bg-base-200 min-h-full w-80 p-4">
+                <li><a href="/PC-wiki/">Home</a></li>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Troubleshooting</a></li>
+                <li class="divider"></li>
+                <li><a href="https://github.com/MarzSaksorn/PC-wiki" target="_blank">GitHub</a></li>
+                <li><a href="/">Back to Marzweb</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

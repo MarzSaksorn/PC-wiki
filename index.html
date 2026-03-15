@@ -2,26 +2,146 @@
 <html class="dark" lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Marzweb</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" >
-    <link rel="shortcut icon" href="/src/img/Marz.jpg" type="image/x-icon" >
-    <link rel="stylesheet" href="/src/style.css" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Wiki - Marzweb</title>
+    <link rel="stylesheet" href="/src/style.css" />
 </head>
 
-<body id="body" style="font-family: 'Brush Script MT', cursive, sans-serif"
-    class="min-w-screen min-h-screen  dark bg-cover bg-center bg-no-repeat bg-local font-semibold">
-    
-    <div class="w-full grid text-center justify-center">
-        <h1 class="mt-96 font-extrabold text-6xl ">
-            Welcome to PC Wiki by Marzweb
-        </h1>
-        <p class="text-3xl mt-10 px-32">
-            I built this for the people who is new to using computer <br> or the one who doesn't get about something about their computer
-        </p>
-    </div>
+<body class="min-h-screen bg-base-100">
+    <div class="drawer lg:drawer-open">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+            <div class="navbar bg-base-300">
+                <div class="flex-none">
+                    <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block h-6 w-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div class="flex-1">
+                    <a href="/PC-wiki/" class="btn btn-ghost text-xl">PC Wiki</a>
+                </div>
+                <div class="flex-none">
+                    <a href="/" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
+            <div class="container mx-auto px-4 py-8">
+                <div class="text-center py-12">
+                    <h1 class="text-5xl font-bold mb-4">PC Wiki</h1>
+                    <p class="text-lg opacity-70 mb-8">Your guide to computing, from beginner to pro</p>
+                    
+                    <div class="join w-full max-w-xl mx-auto">
+                        <input type="text" placeholder="Search articles..." class="input input-bordered join-item flex-1" />
+                        <button class="btn btn-primary join-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors cursor-pointer">
+                        <div class="card-body items-center text-center">
+                            <div class="text-4xl mb-2">🖥️</div>
+                            <h2 class="card-title">Hardware</h2>
+                            <p class="opacity-70">PC parts, components, and builds</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors cursor-pointer">
+                        <div class="card-body items-center text-center">
+                            <div class="text-4xl mb-2">💿</div>
+                            <h2 class="card-title">Software</h2>
+                            <p class="opacity-70">Applications, OS, and utilities</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors cursor-pointer">
+                        <div class="card-body items-center text-center">
+                            <div class="text-4xl mb-2">📖</div>
+                            <h2 class="card-title">Guides</h2>
+                            <p class="opacity-70">Tutorials and how-tos</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors cursor-pointer">
+                        <div class="card-body items-center text-center">
+                            <div class="text-4xl mb-2">🔧</div>
+                            <h2 class="card-title">Troubleshooting</h2>
+                            <p class="opacity-70">Fix common PC problems</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="divider text-lg opacity-60">Quick Links</div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">Building Your First PC</h3>
+                            <p class="opacity-70 text-sm">A complete beginner's guide to PC assembly</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">Windows Installation</h3>
+                            <p class="opacity-70 text-sm">How to clean install Windows 11</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">BIOS Setup Guide</h3>
+                            <p class="opacity-70 text-sm">Navigate and configure your BIOS</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">Driver Installation</h3>
+                            <p class="opacity-70 text-sm">Keep your drivers up to date</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">Storage Guide</h3>
+                            <p class="opacity-70 text-sm">SSD vs HDD, partitioning, and more</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card bg-base-200 hover:bg-base-300 transition-colors">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">Internet Troubleshooting</h3>
+                            <p class="opacity-70 text-sm">Fix WiFi and connectivity issues</p>
+                        </div>
+                    </a>
+                </div>
+
+                <footer class="footer footer-center p-6 bg-base-200 text-base-content rounded-box mt-12">
+                    <div>
+                        <p class="opacity-60">PC Wiki by Marzweb • Open source on GitHub</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="menu bg-base-200 min-h-full w-80 p-4">
+                <li><a href="/PC-wiki/" class="font-semibold">Home</a></li>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Troubleshooting</a></li>
+                <li class="divider"></li>
+                <li><a href="https://github.com/MarzSaksorn/PC-wiki" target="_blank">GitHub</a></li>
+                <li><a href="/">Back to Marzweb</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
