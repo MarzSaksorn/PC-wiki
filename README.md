@@ -1,4 +1,6 @@
 # PC Wiki
+## Behind the scene
+https://youtu.be/kDMOTstfyEc
 
 A beginner-friendly guide to computers — from buying your first PC to mastering your setup.
 
