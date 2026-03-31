@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/PC-Wiki/',
   preview: {
     port: 5174,
-    allowedHosts: www.marzweb.win,
+    allowedHosts: ['www.marzweb.win'],
   },
   plugins: [
     react(),
