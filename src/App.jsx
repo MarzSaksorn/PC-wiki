@@ -35,7 +35,7 @@ import MaintenanceSchedule from './pages/MaintenanceSchedule.jsx'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PC-Wiki">
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
