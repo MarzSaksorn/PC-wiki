@@ -1,7 +1,3 @@
-# PC Wiki
-
-A beginner-friendly guide to computers — from buying your first PC to mastering your setup.
-
 -----------------------------------
 
 **Styling, Layout and Search System of This Project is Vibe Coded**
@@ -9,6 +5,10 @@ A beginner-friendly guide to computers — from buying your first PC to masterin
 **Things that are not Vibe Coded in This Project is Each of every Articl aboute Computer**
 
 --------------------------------------
+
+# PC Wiki
+
+A beginner-friendly guide to computers — from buying your first PC to mastering your setup.
 
 ## Tech Stack
 
