@@ -2,7 +2,7 @@
 
 **Styling, Layout and Search System of This Project is Vibe Coded**
 
-**Things that are not Vibe Coded in This Project is Each of every Articl aboute Computer**
+**Things that are not Vibe Coded in This Project is Each of every Article about Computer**
 
 --------------------------------------
 
